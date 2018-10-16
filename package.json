@@ -1,0 +1,14 @@
+{
+  "name": "webhook-router",
+  "version": "1.0.0",
+  "description": "Routes webhooks to destinations",
+  "main": "index.js",
+  "author": "Even Holthe",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "death": "^1.1.0",
+    "js-yaml": "^3.12.0",
+    "smee-client": "^1.0.2"
+  }
+}
