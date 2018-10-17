@@ -1,9 +1,10 @@
 const yaml = require('js-yaml');
 const fs = require('fs');
+const path = require('path');
 const SmeeClient = require('smee-client');
 const onDeath = require('death');
 
-const configFile = process.env.WEBHOOK_CONFIG || '/etc/webhooks/config.yaml';
+const configFile = process.env.WEBHOOK_CONFIG || path.join('etc','webhooks','config.yaml');
 const config = yaml.safeLoad(fs.readFileSync(configFile, 'utf8'));
 
 var clients = [];
